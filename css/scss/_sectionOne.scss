@@ -1,6 +1,58 @@
 .sectionOne{
     @include sectionSize(68.5rem);
+    background: url(../../img/sectionOneBgImgDesktop.jpg);
     .wrapper{
         @include wrapperSize(100%);
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+
+        .sectionOne-article{
+            @include flex(column, space-around, flex-start);
+            flex: 1 1 1rem;
+            max-width: 56rem;
+            min-width: 25rem;
+            height: 35rem;
+
+            .sectionOne-article_heading{
+                font-size: 3.6rem;
+                letter-spacing: 0.16rem;
+                line-height: 2.6rem;
+
+            }
+
+            .sectionOne-article_paragraph{
+                font-size: 1.6rem;
+                letter-spacing: 0.16rem;
+                line-height: 2.6rem;
+            }
+
+            .sectionOne-artcle_btn{
+                background-color: $mainColor;
+                
+                font-size: 1.6rem;
+                letter-spacing: 0.16rem;
+
+                border: none;
+                width: 23rem;
+                height: 6.3rem;
+            }
+                .sectionOne-artcle_btn:hover{
+                    background-color: $mainBtnHover;
+                    cursor: pointer;
+                }
+        }
+        /*imgage container*/
+        .imgContainer{
+            flex:1 1 1rem;
+            @include flex(column, flex-start, center);
+
+            .sectionOne-img_first{
+                margin-bottom: 1rem;
+
+            }
+            .sectionOne-img_second{
+                align-self: flex-end;
+            }
+        }
     }
 }

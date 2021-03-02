@@ -3,6 +3,8 @@
 $mainFontColor: rgb(255, 255, 255);
 $mainColor: #5474FD;
 
+$mainBackgroundColor:#333333;
+
 $mainBtnHover: #435ac4;
 
 /*Standard changes*/
@@ -52,7 +54,7 @@ a:hover{
 }
 
 @mixin wrapperSize ($height){
-    max-width: 140rem;
+    max-width: 115rem;
     height: $height;
     margin: auto;
 }
