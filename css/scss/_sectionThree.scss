@@ -50,3 +50,42 @@
 
     }
 }
+
+/*mobiles*/
+@media only screen and (max-width: 750px) {
+
+    .sectionThree{
+        .wrapper{
+            @include wrapperSize(100%);
+            @include flex(row, center, center);
+    
+        }
+    }
+  
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .sectionThree{
+        @include sectionSize(40rem);
+        .wrapper{
+            .sectionThree-bookNow_article{
+                @include flex(column, flex-start, flex-start);
+                background: #232323ef;
+                max-width: 54rem;
+                max-height: 37rem;
+                padding: 0 5rem;
+
+                .bookNow-article_paragraph{
+                    margin: 1rem 0;
+    
+                    font-size: 1.1rem;
+                    line-height: 2.6rem;
+                }
+    
+            }
+    
+        }
+    }
+  
+}

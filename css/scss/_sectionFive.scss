@@ -16,7 +16,7 @@
 
         .sectionFive-article{
             @include flex(row, center, center);
-            height: 29rem;
+            min-height: 29rem;
 
             .sectionFive-img{
                 flex: 1 1 27rem;
@@ -56,4 +56,87 @@
 
         }
     }
+}
+
+
+@media only screen and (max-width:850px) {
+
+    .sectionFive{
+        @include sectionSize(73.1rem);
+        background: url(../../img/sectionFiveBgImgDesktop.jpg);
+    
+        .wrapper{
+            @include wrapperSize(100%);
+            @include flex(column, center, center);
+    
+            .sectionFive-heading{
+                max-height: 10rem;
+                font-size: 2.6rem;
+            }
+    
+            .sectionFive-article{
+                .sectionFive-textContainer{
+
+                        .sectionFive-article_heading{
+                            font-size: 1.6rem;
+                            margin-bottom: 1rem;
+                        }
+                        .sectionFive-article_paragraph{
+                            max-width: 90%;
+                            font-size: 1.2rem;
+                            line-height: 1.6rem;
+    
+                            span{
+    
+                            }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+
+    .sectionFive{
+        @include sectionSize(60rem);
+        background: url(../../img/sectionFiveBgImgDesktop.jpg);
+    
+        .wrapper{
+            @include wrapperSize(100%);
+            @include flex(column, center, center);
+    
+            .sectionFive-heading{
+                max-height: 5rem;
+                font-size: 2.6rem;
+            }
+    
+            .sectionFive-article{
+                @include flex(column, center, center);
+
+                .sectionFive-img{
+                    flex: 1 1 27rem;
+                    img{
+                        width: 90%;
+                        margin: auto;
+                    }
+                }
+                .sectionFive-textContainer{
+                    max-width: 90%;
+
+                        .sectionFive-article_heading{
+                            font-size: 1.6rem;
+                            margin-bottom: 1rem;
+                        }
+                        .sectionFive-article_paragraph{
+                            max-width: 90%;
+                            font-size: 1.2rem;
+                            line-height: 1.6rem;
+                         }
+                }
+            }
+        }
+    }
+
 }

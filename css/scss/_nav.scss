@@ -7,27 +7,34 @@ header{
 
         nav{
             @include flex(row, flex-start, center);
+            flex-wrap: wrap;
+
             width: 100%;
             height: 100%;
-            .headerLogo{
-                flex: 1 1 1rem;
-                font-size: 2.4rem;
-                letter-spacing: 0.24rem;
-            }
 
-            .navList{
-                @include flex(row, flex-end, center);
-                flex: 2 1 17rem;
+                .headerLogo{
+                    flex: 1 1 1rem;
+                    font-size: 2.4rem;
+                    letter-spacing: 0.24rem;
+                }
 
-                .navList-item{
-                    padding: 0 2rem;
-                    max-width: 17rem;
+                .navList{
+                    @include flex(row, flex-end, center);
+                    flex: 2 1 17rem;
 
-                    a{
-                        font-size: 1.4rem;
+                    .navList-item{
+                        padding: 0 2rem;
+                        max-width: 17rem;
+
+                        a{
+                            font-size: 1.4rem;
+                        }
                     }
                 }
-            }
         }
     }
+}
+
+@media only screen and (max-width:900px) {
+    header{display: none;}
 }

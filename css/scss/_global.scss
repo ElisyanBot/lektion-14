@@ -13,7 +13,6 @@ html{
     /*1 rem = 10 px*/
 
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
     /*new standard font*/
 }
 
@@ -27,6 +26,7 @@ body{
     padding: 1.5rem;
     margin:auto;
 }
+
 
 h1, h2,
 h3, h4, 
@@ -68,4 +68,24 @@ a:hover{
     flex-direction: $flex-direction;
     justify-content:$justify-content;
     align-items: $align-items;
+}
+
+/*media rules for every section*/
+
+/*tablets*/
+@media only screen and (max-width: 1200px) {
+    .wrapper{
+         padding: 0 2rem;
+    }
+}
+
+/*mobiles*/
+@media only screen and (max-width: 750px) {
+
+    .outline{
+        padding: 0;
+    }
+    .wrapper{
+         padding: 0 0;
+    }
 }

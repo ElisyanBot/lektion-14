@@ -20,3 +20,34 @@
         }
     }
 }
+
+/*mobiles*/
+@media only screen and (max-width: 750px) {
+    .sectionTwo{
+
+        
+        .wrapper{
+            @include wrapperSize(100%);
+            @include flex(row, space-evenly, center);
+    
+            .logoContainer{
+                @include flex(column, space-around, center);
+                width: 20rem;
+                height: 16rem; 
+    
+                .sectionTwo-heading{
+                    font-size: 1.4rem;
+                }
+
+                .iconOne, .iconTwo, .iconThree
+                {
+                    transform: scale(0.6);
+                }
+            }
+    
+            .svgContainer{
+                display: none;
+            }
+        }
+    }
+}
