@@ -483,7 +483,7 @@ header .wrapper nav .navList .navList-item a {
 
 .sectionThree {
   width: 100%;
-  height: 68.5rem;
+  height: 70rem;
   margin: auto;
   background: url(../../img/sectionThreeBgImgDesktop.jpg);
 }
@@ -561,7 +561,7 @@ header .wrapper nav .navList .navList-item a {
 
 .sectionFour {
   width: 100%;
-  height: 68.5rem;
+  height: 70rem;
   margin: auto;
   background: url(../../img/sectionFourBgImgDesktop.jpg);
 }
@@ -639,20 +639,185 @@ header .wrapper nav .navList .navList-item a {
 
 .sectionFive {
   width: 100%;
-  height: 68.5rem;
+  height: 73.1rem;
   margin: auto;
+  background: url(../../img/sectionFiveBgImgDesktop.jpg);
 }
 
 .sectionFive .wrapper {
   max-width: 115rem;
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionFive .wrapper .sectionFive-heading {
+  height: 10rem;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+}
+
+.sectionFive .wrapper .sectionFive-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 29rem;
+}
+
+.sectionFive .wrapper .sectionFive-article .sectionFive-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 27rem;
+          flex: 1 1 27rem;
+}
+
+.sectionFive .wrapper .sectionFive-article .sectionFive-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sectionFive .wrapper .sectionFive-article .sectionFive-textContainer {
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 1rem;
+          flex: 4 1 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+  height: 98%;
+  width: 100%;
+}
+
+.sectionFive .wrapper .sectionFive-article .sectionFive-textContainer .sectionFive-article_heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 5%;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.sectionFive .wrapper .sectionFive-article .sectionFive-textContainer .sectionFive-article_paragraph {
+  max-width: 90%;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 /*footer*/
 footer {
   width: 100%;
-  height: 68.5rem;
+  height: 27rem;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #232323;
+}
+
+footer .footerContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15rem;
+}
+
+footer .footerContentContainer .footerLogo {
+  font-size: 2.4rem;
+  letter-spacing: 0.33rem;
+  line-height: 2.6rem;
+}
+
+footer .footerContentContainer .footer-paragraph {
+  font-size: 1.6rem;
+  letter-spacing: 0.16rem;
+  line-height: 2.6rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+footer .footerContentContainer .footerIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footerContentContainer .footerIcons li {
+  margin: 1rem;
+}
+
+footer .footerContentContainer .footerIcons .fab {
+  font-size: 1.6rem;
+}
+
+footer .footerContentContainer .footerIcons .fab:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: #435ac4;
+}
+
+footer .footerContentContainer .footerIcons .fa-linkedin-in {
+  color: #5474FD;
 }
 /*# sourceMappingURL=index.css.map */

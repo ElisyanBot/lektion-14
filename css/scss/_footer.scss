@@ -1,3 +1,42 @@
 footer{
-    @include sectionSize(68.5rem);
+    @include sectionSize(27rem);
+    @include flex(column, flex-end, center);
+    background-color: #232323;
+
+    .footerContentContainer{
+        @include flex(column, flex-start, center);
+        height: 15rem;
+        .footerLogo{
+            font-size: 2.4rem;
+            letter-spacing: 0.33rem;
+            line-height: 2.6rem;
+        }
+        .footer-paragraph{
+            font-size: 1.6rem;
+            letter-spacing: 0.16rem;
+            line-height: 2.6rem;
+            text-align: center;
+
+            margin: 1rem
+        }
+        .footerIcons{
+            @include flex(row, center, center);
+
+            li{
+                margin: 1rem;
+            }
+
+            .fab{
+                font-size: 1.6rem;
+            }
+             .fab:hover{
+                 transform: scale(1.3);
+                 color: $mainBtnHover;
+             }
+
+            .fa-linkedin-in{
+                color:$mainColor;
+            }
+        }
+    }
 }

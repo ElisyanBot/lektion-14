@@ -1,5 +1,5 @@
 .sectionThree{
-    @include sectionSize(68.5rem);
+    @include sectionSize(70rem);
     background: url(../../img/sectionThreeBgImgDesktop.jpg);
     .wrapper{
         @include wrapperSize(100%);

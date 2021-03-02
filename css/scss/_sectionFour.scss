@@ -1,5 +1,5 @@
 .sectionFour{
-    @include sectionSize(68.5rem);
+    @include sectionSize(70rem);
     background: url(../../img/sectionFourBgImgDesktop.jpg);
     .wrapper{
         @include wrapperSize(100%);

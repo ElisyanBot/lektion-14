@@ -1,6 +1,59 @@
 .sectionFive{
-    @include sectionSize(68.5rem);
+    @include sectionSize(73.1rem);
+    background: url(../../img/sectionFiveBgImgDesktop.jpg);
+
     .wrapper{
         @include wrapperSize(100%);
+        @include flex(column, center, center);
+
+        .sectionFive-heading{
+            height: 10rem;
+
+            font-size: 3.6rem;
+            line-height: 2.6rem;
+
+        }
+
+        .sectionFive-article{
+            @include flex(row, center, center);
+            height: 29rem;
+
+            .sectionFive-img{
+                flex: 1 1 27rem;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .sectionFive-textContainer{
+                flex: 4 1 1rem;
+
+                @include flex(column, center, center);
+                background-color: $mainBackgroundColor;
+                height: 98%;
+                width: 100%;
+
+                    .sectionFive-article_heading{
+                        align-self: flex-start;
+                        margin-left: 5%;
+                        font-size: 2rem;
+                        line-height: 2.6rem;
+
+                        margin-bottom: 2rem;
+                    }
+                    
+                    .sectionFive-article_paragraph{
+                        max-width: 90%;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+
+                        span{
+
+                        }
+
+                    }
+            }
+
+        }
     }
 }
