@@ -11,8 +11,15 @@ html{
     /*1 rem = 10 px*/
 }
 
-body{
-    margin: 1.5rem;
+body{ 
+    background-color: #f2f2f2;
+}
+
+.outline{
+    max-width:180rem;
+    background-color: white;
+    padding: 1.5rem;
+    margin:auto;
 }
 
 h1, h2,
@@ -33,6 +40,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 /*mixins*/
 @mixin sectionSize ($height){
     width: 100%;
@@ -41,7 +52,7 @@ a{
 }
 
 @mixin wrapperSize ($height){
-    width: 140rem;
+    max-width: 140rem;
     height: $height;
     margin: auto;
 }

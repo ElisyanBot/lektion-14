@@ -73,7 +73,14 @@ html {
 }
 
 body {
-  margin: 1.5rem;
+  background-color: #f2f2f2;
+}
+
+.outline {
+  max-width: 180rem;
+  background-color: white;
+  padding: 1.5rem;
+  margin: auto;
 }
 
 h1, h2,
@@ -92,6 +99,10 @@ p {
 a {
   color: white;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*mixins*/
@@ -170,11 +181,38 @@ a {
 
 .hero .searchBar input {
   -webkit-box-flex: 4;
-      -ms-flex: 4 1 10rem;
-          flex: 4 1 10rem;
-  border: none;
+      -ms-flex: 4 1 1rem;
+          flex: 4 1 1rem;
   height: 100%;
-  width: 79.5%;
+  border: none;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 2.8px;
+  color: black;
+}
+
+.hero .searchBar input::-webkit-input-placeholder {
+  font-size: 1.4rem;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+
+.hero .searchBar input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+
+.hero .searchBar input::-ms-input-placeholder {
+  font-size: 1.4rem;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+
+.hero .searchBar input::placeholder {
+  font-size: 1.4rem;
+  letter-spacing: 2.8px;
+  color: #999999;
 }
 
 .hero .searchBar input:hover {
@@ -187,17 +225,17 @@ a {
 
 .hero .searchBar button {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
+      -ms-flex: 1 1 3rem;
+          flex: 1 1 3rem;
   background-color: #5474FD;
   border: none;
   height: 90%;
-  width: 20%;
   margin: 0 3px;
 }
 
 .hero .searchBar button:hover {
   background-color: #435ac4;
+  cursor: pointer;
 }
 
 .hero .scrollDown {
@@ -218,10 +256,71 @@ a {
   letter-spacing: 0.28rem;
 }
 
-nav {
+header {
   width: 100%;
   height: 8.5rem;
   margin: auto;
+  background-color: #5474FD;
+}
+
+header .wrapper {
+  max-width: 140rem;
+  height: 100%;
+  margin: auto;
+}
+
+header .wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+header .wrapper nav .headerLogo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1rem;
+          flex: 1 1 1rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.24rem;
+}
+
+header .wrapper nav .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 17rem;
+          flex: 2 1 17rem;
+}
+
+header .wrapper nav .navList .navList-item {
+  padding: 0 2rem;
+  max-width: 17rem;
+}
+
+header .wrapper nav .navList .navList-item a {
+  font-size: 1.4rem;
 }
 
 /*sections*/
@@ -232,7 +331,7 @@ nav {
 }
 
 .sectionOne .wrapper {
-  width: 140rem;
+  max-width: 140rem;
   height: 100%;
   margin: auto;
 }
@@ -244,7 +343,7 @@ nav {
 }
 
 .sectionTwo .wrapper {
-  width: 140rem;
+  max-width: 140rem;
   height: 100%;
   margin: auto;
 }
@@ -256,7 +355,7 @@ nav {
 }
 
 .sectionThree .wrapper {
-  width: 140rem;
+  max-width: 140rem;
   height: 100%;
   margin: auto;
 }
@@ -268,7 +367,7 @@ nav {
 }
 
 .sectionFour .wrapper {
-  width: 140rem;
+  max-width: 140rem;
   height: 100%;
   margin: auto;
 }
@@ -280,7 +379,7 @@ nav {
 }
 
 .sectionFive .wrapper {
-  width: 140rem;
+  max-width: 140rem;
   height: 100%;
   margin: auto;
 }
