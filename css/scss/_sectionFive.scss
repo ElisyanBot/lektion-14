@@ -1,6 +1,6 @@
 .sectionFive{
     @include sectionSize(73.1rem);
-    background: url(../../img/sectionFiveBgImgDesktop.jpg);
+    background: url(../img/sectionFiveBgImgDesktop.jpg);
 
     .wrapper{
         @include wrapperSize(100%);
@@ -48,7 +48,8 @@
                         line-height: 2.6rem;
 
                         span{
-
+                            color: $mainColor;
+                            font-size: 2rem;
                         }
 
                     }

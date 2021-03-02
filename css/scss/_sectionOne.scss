@@ -1,6 +1,6 @@
 .sectionOne{
     @include sectionSize(68.5rem);
-    background: url(../../img/sectionOneBgImgDesktop.jpg);
+    background: url(../img/sectionOneBgImgDesktop.jpg);
     .wrapper{
         @include wrapperSize(100%);
         @include flex(row, space-between, center);
@@ -35,6 +35,26 @@
                 border: none;
                 width: 23rem;
                 height: 6.3rem;
+
+                position: relative;
+
+                .btnDec{
+                    content: url(../../svg/btnDecor.svg);
+                    position: absolute;
+                    z-index: 1;
+                    right: 25.5%;
+                    bottom:0%;
+
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+                .btnText{
+                    position: absolute;
+                    z-index: 1;
+                    right: 12%;
+                    bottom: 35%;
+                }
             }
                 .sectionOne-artcle_btn:hover{
                     background-color: $mainBtnHover;

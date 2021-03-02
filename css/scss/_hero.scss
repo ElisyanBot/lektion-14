@@ -3,7 +3,7 @@
 .hero{
     @include sectionSize(74rem);
     @include flex(column, center, center);
-    background: url(../../img/heroImgDesktop.jpg);
+    background-image: url(../img/heroImgDesktop.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
     /*article hero section*/
@@ -30,7 +30,7 @@
         flex-wrap: wrap;
 
         background: white;
-        width: 45%;
+        width:63.5rem; /*make this to % if you want the hero section on mobile*/
         height: 6.3rem;
 
         .searchBar-input{
@@ -73,11 +73,16 @@
             }
     }
 
+    /*scroll down paragraf*/
+
     .scrollDown{
         @include flex(column, flex-end, center);
         height: 14rem;
 
+        font-size: 1.4rem;
         letter-spacing: 0.28rem;
+        color: white;
+        
     }
 }
 

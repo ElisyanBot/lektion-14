@@ -144,12 +144,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../img/heroImgDesktop.jpg);
+  background-image: url(../img/heroImgDesktop.jpg);
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
   /*article hero section*/
   /*search bar in hero section*/
+  /*scroll down paragraf*/
 }
 
 .hero .hero-article {
@@ -197,7 +198,8 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: white;
-  width: 45%;
+  width: 63.5rem;
+  /*make this to % if you want the hero section on mobile*/
   height: 6.3rem;
 }
 
@@ -273,7 +275,9 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 14rem;
+  font-size: 1.4rem;
   letter-spacing: 0.28rem;
+  color: white;
 }
 
 @media only screen and (max-width: 900px) {
@@ -499,7 +503,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 68.5rem;
   margin: auto;
-  background: url(../../img/sectionOneBgImgDesktop.jpg);
+  background: url(../img/sectionOneBgImgDesktop.jpg);
 }
 
 .sectionOne .wrapper {
@@ -564,6 +568,24 @@ header .wrapper nav #MenyBtn {
   border: none;
   width: 23rem;
   height: 6.3rem;
+  position: relative;
+}
+
+.sectionOne .wrapper .sectionOne-article .sectionOne-artcle_btn .btnDec {
+  content: url(../../svg/btnDecor.svg);
+  position: absolute;
+  z-index: 1;
+  right: 25.5%;
+  bottom: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionOne .wrapper .sectionOne-article .sectionOne-artcle_btn .btnText {
+  position: absolute;
+  z-index: 1;
+  right: 12%;
+  bottom: 35%;
 }
 
 .sectionOne .wrapper .sectionOne-article .sectionOne-artcle_btn:hover {
@@ -706,9 +728,12 @@ header .wrapper nav #MenyBtn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .sectionTwo .wrapper .logoContainer {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,12 +750,35 @@ header .wrapper nav #MenyBtn {
   height: 16rem;
 }
 
+.sectionTwo .wrapper .logoContainer .backgroundIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #333333;
+  width: 50%;
+  height: 50%;
+}
+
 .sectionTwo .wrapper .logoContainer .sectionTwo-heading {
   font-size: 3rem;
 }
 
 .sectionTwo .wrapper .svgContainer {
-  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  width: 60%;
 }
 
 /*mobiles*/
@@ -776,16 +824,13 @@ header .wrapper nav #MenyBtn {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
-  .sectionTwo .wrapper .svgContainer {
-    display: none;
-  }
 }
 
 .sectionThree {
   width: 100%;
   height: 70rem;
   margin: auto;
-  background: url(../../img/sectionThreeBgImgDesktop.jpg);
+  background: url(../img/sectionThreeBgImgDesktop.jpg);
 }
 
 .sectionThree .wrapper {
@@ -852,6 +897,24 @@ header .wrapper nav #MenyBtn {
   background-color: #5474FD;
   font-size: 1.6rem;
   letter-spacing: 0.16rem;
+  position: relative;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_btn .btnDec {
+  content: url(../../svg/btnDecor.svg);
+  position: absolute;
+  z-index: 1;
+  right: 24%;
+  bottom: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_btn .btnText {
+  position: absolute;
+  z-index: 1;
+  right: 24%;
+  bottom: 35%;
 }
 
 .sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_btn:hover {
@@ -917,7 +980,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 70rem;
   margin: auto;
-  background: url(../../img/sectionFourBgImgDesktop.jpg);
+  background: url(../img/sectionFourBgImgDesktop.jpg);
 }
 
 .sectionFour .wrapper {
@@ -984,6 +1047,24 @@ header .wrapper nav #MenyBtn {
   background-color: #5474FD;
   font-size: 1.6rem;
   letter-spacing: 0.16rem;
+  position: relative;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_btn .btnDec {
+  content: url(../../svg/btnDecor.svg);
+  position: absolute;
+  z-index: 1;
+  right: 25%;
+  bottom: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_btn .btnText {
+  position: absolute;
+  z-index: 1;
+  right: 24%;
+  bottom: 35%;
 }
 
 .sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_btn:hover {
@@ -1055,7 +1136,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 73.1rem;
   margin: auto;
-  background: url(../../img/sectionFiveBgImgDesktop.jpg);
+  background: url(../img/sectionFiveBgImgDesktop.jpg);
 }
 
 .sectionFive .wrapper {
@@ -1147,6 +1228,11 @@ header .wrapper nav #MenyBtn {
   max-width: 90%;
   font-size: 1.6rem;
   line-height: 2.6rem;
+}
+
+.sectionFive .wrapper .sectionFive-article .sectionFive-textContainer .sectionFive-article_paragraph span {
+  color: #5474FD;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 850px) {

@@ -27,18 +27,18 @@
                     Safe Travel Anywhere
                 </p>
             </article>
-            <form class="searchBar">
+            <form class="searchBar" action="get">
                 <label for="SearchBar"></label>
                 <input type="search" id="SearchBar" class="searchBar-input"
                 placeholder="Search Your Travel Destination" required>
-                <button type="submit" class="searchBar-btn" for="SearchBar">SEARCH <span><!--font awesome--></span></button>
+                <button type="submit" class="searchBar-btn" for="SearchBar">SEARCH <i class="fas fa-search"></i></button>
             </form>
 
             <div class="scrollDown">
                 <p class="scrollDown-paragraph">
                     Scroll Down
                 </p>
-                <i><!--font Awsome--></i> 
+                <i class="fas fa-chevron-down"></i>
             </div>
         </section>
 
@@ -53,7 +53,7 @@
                         <li class="navList-item"><a class="navList-Link" href="#">TRAVEL WITH US</a></li>
                         <li class="navList-item"><a class="navList-Link" href="#">CONTACT US</a></li>
                     </ul>
-                    <button id="MenyBtn" onclick="mobileMeny()"><i class="fas fa-bars"></i></button>
+                    <button id="MenyBtn" onclick="mobileMeny()" aria-label="meny btn"><i class="fas fa-bars"></i></button>
                 </nav>
             </div>
         </header>
@@ -86,7 +86,11 @@
                     Ddislike men who are so beguiled and demoralized by the charms of pleasure of 
                     the moment, so blinded by desire, that
                 </p>
-                <button class="sectionOne-artcle_btn">EXPLORE PLACES</button>
+                <button class="sectionOne-artcle_btn">
+                    <span class="btnDec"></span>
+                    <span class="btnText">EXPLORE PLACES</span> 
+                </button>
+        
             </article>
             <div class="imgContainer">
                 <picture class="sectionOne-img_first">
@@ -105,27 +109,32 @@
         <div class="wrapper">
             <!-- first-->
             <div class="logoContainer">
-                <img class="iconOne" src="img/sectiontwoSvgOne.png" alt="">
+                <div class="backgroundIcon">
+                    <img class="iconOne" src="img/sectiontwoSvgOne.png" alt="">
+                </div>
                 <h3 class="sectionTwo-heading">
                     Search Places
                 </h3>
             </div>
             <!-- second-->
             <div class="logoContainer">
-                <img class="iconTwo"src="img/sectiontwoSvgTow.png" alt="">
+                <div class="backgroundIcon">
+                    <img class="iconTwo" src="img/sectiontwoSvgTow.png" alt="">
+                </div>
                 <h3 class="sectionTwo-heading">
                     Select Places
                 </h3>
             </div>
             <!-- third-->
             <div class="logoContainer">
-                <img class="iconThree"src="img/sectiontwoSvgThree.png" alt="">
+                <div class="backgroundIcon">
+                    <img class="iconThree" src="img/sectiontwoSvgThree.png" alt="">
+                </div>
                 <h3 class="sectionTwo-heading">
                     Book & Enjoy
                 </h3>
             </div>
-            <div class="svgContainer"></div>
-            <div class="svgContainer"></div>
+            <img class="svgContainer" alt="decoration" src="svg/bow.svg"></img>
         </div>
     </section>
 
@@ -145,7 +154,8 @@
                     complete account of the system
                 </p>
                 <button class="bookNow-article_btn">
-                    BOOK NOW
+                    <span class="btnDec"></span>
+                    <span class="btnText">BOOK NOW</span> 
                 </button>
             </article>
         </div>
@@ -168,7 +178,8 @@
                     complete account of the system
                 </p>
                 <button class="bookNow-article_btn">
-                    BOOK NOW
+                    <span class="btnDec"></span>
+                    <span class="btnText">BOOK NOW</span> 
                 </button>
             </article>
         </div>
@@ -191,7 +202,7 @@
                 </h4>
                 
                 <p class="sectionFive-article_paragraph">
-                    <span></span>But I must explain to you how all this mistaken idea of account to 
+                    <span><i class="fas fa-quote-left"></i></span> But I must explain to you how all this mistaken idea of account to 
                     denouncinpleasure and praising pain  But I must explain to you how 
                     all this mistaken idea of account to nai denouncing pleasure and 
                     praising pain was account  born and I account will give you a 
@@ -208,11 +219,11 @@
             <h2 class="footerLogo">BHROMAON</h2>
             <p class="footer-paragraph">Safe Travel Anywhere</p>
             <ul class="footerIcons">
-                <li class="soicalMedia"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="soicalMedia"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="soicalMedia"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li class="soicalMedia"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li class="soicalMedia"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li class="soicalMedia"><a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="soicalMedia"><a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="soicalMedia"><a href="#" aria-label="linkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="soicalMedia"><a href="#" aria-label="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li class="soicalMedia"><a href="#" aria-label="pintrest"><i class="fab fa-pinterest"></i></a></li>
             </ul>
         </div>
     </footer>
