@@ -37,6 +37,10 @@ ul, li {
     color:$mainFontColor;
 }
 
+h3, h4, h5, h6, p, li, a , span, button{
+    font-weight: 400;
+}
+
 p{
     font-size: 1.6rem;
 }

@@ -64,8 +64,7 @@
 
     .sectionFive{
         @include sectionSize(73.1rem);
-        background: url(../../img/sectionFiveBgImgDesktop.jpg);
-    
+        
         .wrapper{
             @include wrapperSize(100%);
             @include flex(column, center, center);
@@ -102,7 +101,6 @@
 
     .sectionFive{
         @include sectionSize(60rem);
-        background: url(../../img/sectionFiveBgImgDesktop.jpg);
     
         .wrapper{
             @include wrapperSize(100%);
