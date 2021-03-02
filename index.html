@@ -14,9 +14,10 @@
     <script src="https://kit.fontawesome.com/1c11390acb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--outline border-->
     <div class="outline"> 
 
-      <!--hero section-->
+    <!---- hero section start here ---->
         <section class="hero">
             <article class="hero-article">
                 <h1 class="hero-article_heading">
@@ -52,12 +53,24 @@
                         <li class="navList-item"><a class="navList-Link" href="#">TRAVEL WITH US</a></li>
                         <li class="navList-item"><a class="navList-Link" href="#">CONTACT US</a></li>
                     </ul>
+                    <button id="MenyBtn" onclick="mobileMeny()"><i class="fas fa-bars"></i></button>
                 </nav>
             </div>
         </header>
+        <!--mobileMeny section-->
+        <section id="MobileMeny">
+                <div class="wrapper">
+                    <ul class="navList">
+                        <li class="navList-item"><a class="navList-Link" href="#">WHOE WE ARE</a></li>
+                        <li class="navList-item"><a class="navList-Link" href="#"> WHAT WE DO</a></li>
+                        <li class="navList-item"><a class="navList-Link" href="#">TRAVEL WITH US</a></li>
+                        <li class="navList-item"><a class="navList-Link" href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+        </section>
 
     <!--sectionOne starts here-->
-    
+
     <section class="sectionOne">
         <div class="wrapper">
             <article class="sectionOne-article">
@@ -204,5 +217,7 @@
         </div>
     </footer>
 </div>
+
+<script src="javascript/menybtn.js"></script>
 </body>
 </html>

@@ -12,11 +12,11 @@ header{
             width: 100%;
             height: 100%;
 
-                .headerLogo{
+            .headerLogo{
                     flex: 1 1 1rem;
                     font-size: 2.4rem;
                     letter-spacing: 0.24rem;
-                }
+            }
 
                 .navList{
                     @include flex(row, flex-end, center);
@@ -31,10 +31,59 @@ header{
                         }
                     }
                 }
+            #MenyBtn{
+                 display: none;
+                 height: 100%;
+                 padding: 0 3rem;
+                 font-size: 2rem;
+
+                 background: $mainBtnHover;
+                 border: none;
+            }
         }
+
     }
 }
 
+/*mobile meny*/
 @media only screen and (max-width:900px) {
-    header{display: none;}
+    header{
+        @include sectionSize(8.5rem);
+        background-color: $mainColor;
+        
+        .wrapper{
+            @include wrapperSize(100%);
+    
+            nav{
+                @include flex(row, flex-start, center);
+                flex-wrap: wrap;
+    
+                width: 100%;
+                height: 100%;
+    
+                    .headerLogo{
+                        flex: 1 1 1rem;
+                        font-size: 2.4rem;
+                        letter-spacing: 0.24rem;
+                    }
+    
+                    .navList{
+                        display: none;
+    
+                        .navList-item{
+                            padding: 0 2rem;
+                            max-width: 17rem;
+    
+                            a{
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+
+                #MenyBtn{
+                    display: block;
+                }
+            }
+        }
+    }
 }

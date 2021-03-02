@@ -1,0 +1,23 @@
+#MobileMeny{
+    @include sectionSize (10rem);
+    background: $mainBtnHover;
+    display: none;
+    .wrapper{
+        @include wrapperSize(100%);
+        @include flex(row, flex-end, center);
+  
+        ul{
+            @include flex(row, center, center);
+            height: inherit;
+            li{
+                @include flex(row, center, center);
+                height: inherit;
+                padding: 2rem;
+                a{
+                    @include flex(row, center, center);
+                    height: inherit;
+                }
+            }
+        }
+    }
+}
