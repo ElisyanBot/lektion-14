@@ -1,0 +1,294 @@
+/*resets*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*global*/
+/*colors*/
+/*Standard changes*/
+html {
+  font-size: 62.5%;
+  /*1 rem = 10 px*/
+}
+
+body {
+  margin: 1.5rem;
+}
+
+h1, h2,
+h3, h4,
+h5, h6,
+p,
+button,
+ul, li {
+  color: white;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*mixins*/
+/*navigation/hero*/
+.hero {
+  width: 100%;
+  height: 74rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../../img/heroImgDesktop.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  /*article hero section*/
+  /*search bar in hero section*/
+}
+
+.hero .hero-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 13rem;
+  max-width: 40rem;
+}
+
+.hero .hero-article .hero-article_heading {
+  font-size: 4.8rem;
+  letter-spacing: 0.4rem;
+}
+
+.hero .hero-article .hero-article_paragraph {
+  font-size: 2.2rem;
+  letter-spacing: 0.6rem;
+}
+
+.hero .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  width: 65.3rem;
+  height: 6.3rem;
+}
+
+.hero .searchBar input {
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 10rem;
+          flex: 4 1 10rem;
+  border: none;
+  height: 100%;
+  width: 79.5%;
+}
+
+.hero .searchBar input:hover {
+  background-color: #eeeeee;
+}
+
+.hero .searchBar input:focus {
+  outline: none;
+}
+
+.hero .searchBar button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  background-color: #5474FD;
+  border: none;
+  height: 90%;
+  width: 20%;
+  margin: 0 3px;
+}
+
+.hero .searchBar button:hover {
+  background-color: #435ac4;
+}
+
+.hero .scrollDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 14rem;
+  letter-spacing: 0.28rem;
+}
+
+nav {
+  width: 100%;
+  height: 8.5rem;
+  margin: auto;
+}
+
+/*sections*/
+.sectionOne {
+  width: 100%;
+  height: 68.5rem;
+  margin: auto;
+}
+
+.sectionOne .wrapper {
+  width: 140rem;
+  height: 100%;
+  margin: auto;
+}
+
+.sectionTwo {
+  width: 100%;
+  height: 68.5rem;
+  margin: auto;
+}
+
+.sectionTwo .wrapper {
+  width: 140rem;
+  height: 100%;
+  margin: auto;
+}
+
+.sectionThree {
+  width: 100%;
+  height: 68.5rem;
+  margin: auto;
+}
+
+.sectionThree .wrapper {
+  width: 140rem;
+  height: 100%;
+  margin: auto;
+}
+
+.sectionFour {
+  width: 100%;
+  height: 68.5rem;
+  margin: auto;
+}
+
+.sectionFour .wrapper {
+  width: 140rem;
+  height: 100%;
+  margin: auto;
+}
+
+.sectionFive {
+  width: 100%;
+  height: 68.5rem;
+  margin: auto;
+}
+
+.sectionFive .wrapper {
+  width: 140rem;
+  height: 100%;
+  margin: auto;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 68.5rem;
+  margin: auto;
+}
+/*# sourceMappingURL=index.css.map */

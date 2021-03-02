@@ -1,0 +1,67 @@
+.hero{
+    @include sectionSize(74rem);
+    @include flex(column, center, center);
+    background: url(../../img/heroImgDesktop.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /*article hero section*/
+    .hero-article{
+        @include flex(column, flex-start, center);
+        height: 13rem;
+        max-width: 40rem;
+
+        .hero-article_heading{
+            font-size: 4.8rem;
+            letter-spacing: 0.4rem;
+        }
+
+        .hero-article_paragraph{
+            font-size: 2.2rem;
+            letter-spacing: 0.6rem;
+
+        }
+    }
+
+    /*search bar in hero section*/
+    .searchBar{
+        @include flex(row, center, center);
+        background: white;
+        width: 65.3rem;
+        height: 6.3rem;
+
+        input{
+            flex:4 1 10rem;
+
+            border: none;
+            height: 100%;
+            width: 79.5%;
+        }
+            input:hover{
+                background-color: rgb(238, 238, 238);
+            }
+
+                input:focus{
+                    outline: none;
+                }
+
+        button{
+            flex:1 1 10rem;
+            
+            background-color: $mainColor;
+            border: none;
+            height: 90%;
+            width: 20%;
+            margin: 0 3px;
+        }
+            button:hover{
+                background-color: $mainBtnHover;
+            }
+    }
+
+    .scrollDown{
+        @include flex(column, flex-end, center);
+        height: 14rem;
+
+        letter-spacing: 0.28rem;
+    }
+}

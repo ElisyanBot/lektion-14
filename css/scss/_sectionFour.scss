@@ -1,0 +1,6 @@
+.sectionFour{
+    @include sectionSize(68.5rem);
+    .wrapper{
+        @include wrapperSize(100%);
+    }
+}

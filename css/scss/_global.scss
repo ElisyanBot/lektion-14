@@ -1,0 +1,54 @@
+
+/*colors*/
+$mainFontColor: rgb(255, 255, 255);
+$mainColor: #5474FD;
+
+$mainBtnHover: #435ac4;
+
+/*Standard changes*/
+html{
+    font-size: 62.5%;
+    /*1 rem = 10 px*/
+}
+
+body{
+    margin: 1.5rem;
+}
+
+h1, h2,
+h3, h4, 
+h5, h6, 
+p, 
+button,
+ul, li {
+    color:$mainFontColor;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+a{
+    color:$mainFontColor;
+    text-decoration: none;
+}
+
+/*mixins*/
+@mixin sectionSize ($height){
+    width: 100%;
+    height: $height;
+    margin: auto;
+}
+
+@mixin wrapperSize ($height){
+    width: 140rem;
+    height: $height;
+    margin: auto;
+}
+
+@mixin flex ($flex-direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content:$justify-content;
+    align-items: $align-items;
+}
