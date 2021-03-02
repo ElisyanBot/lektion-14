@@ -16,6 +16,8 @@
                 a{
                     @include flex(row, center, center);
                     height: inherit;
+
+                    text-align: center;
                 }
             }
         }

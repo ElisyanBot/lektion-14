@@ -491,6 +491,7 @@ header .wrapper nav #MenyBtn {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+  text-align: center;
 }
 
 /*sections*/
@@ -903,12 +904,12 @@ header .wrapper nav #MenyBtn {
     background: #232323ef;
     max-width: 54rem;
     max-height: 37rem;
-    padding: 0 5rem;
+    padding: 0 1rem;
   }
   .sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_paragraph {
     margin: 1rem 0;
     font-size: 1.1rem;
-    line-height: 2.6rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -1040,12 +1041,12 @@ header .wrapper nav #MenyBtn {
     background: #232323ef;
     max-width: 54rem;
     max-height: 37rem;
-    padding: 0 5rem;
+    padding: 0 1rem;
   }
   .sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_paragraph {
     margin: 1rem 0;
     font-size: 1.1rem;
-    line-height: 2.6rem;
+    line-height: 1.6rem;
     text-align: end;
   }
 }
