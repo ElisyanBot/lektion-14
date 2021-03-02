@@ -1,6 +1,52 @@
 .sectionThree{
     @include sectionSize(68.5rem);
+    background: url(../../img/sectionThreeBgImgDesktop.jpg);
     .wrapper{
         @include wrapperSize(100%);
+        @include flex(row, flex-start, center);
+
+        .sectionThree-bookNow_article{
+            @include flex(column, flex-start, flex-start);
+            background: #232323ef;
+            width: 54rem;
+            height: 37rem;
+            padding: 0 5rem;
+
+            .bookNow-article_subHeading{
+                font-size: 2rem;
+                letter-spacing: 0.15rem;
+                line-height: 2.6rem;
+            }
+
+            .bookNow-article_heading{
+                font-size: 2rem;
+                line-height: 2.6rem;
+            }
+
+            .bookNow-article_paragraph{
+                margin: 2rem 0;
+
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+            }
+
+            .bookNow-article_btn{
+                margin-top: 2rem;
+                width: 22.8rem;
+                height: 6.3rem;
+
+                border: none;
+
+                background-color: $mainColor;
+                font-size: 1.6rem;
+                letter-spacing: 0.16rem;
+            }
+
+            .bookNow-article_btn:hover{
+                background-color: $mainBtnHover;
+                cursor: pointer;
+            }
+        }
+
     }
 }

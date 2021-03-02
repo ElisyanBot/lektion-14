@@ -1,6 +1,22 @@
 .sectionTwo{
-    @include sectionSize(68.5rem);
+    @include sectionSize(34rem);
+    background-color: $mainBackgroundColor;
     .wrapper{
         @include wrapperSize(100%);
+        @include flex(row, space-evenly, center);
+
+        .logoContainer{
+            @include flex(column, space-around, center);
+            width: 20rem;
+            height: 16rem; 
+
+            .sectionTwo-heading{
+                font-size: 3rem;
+            }
+        }
+
+        .svgContainer{
+            display: none;
+        }
     }
 }

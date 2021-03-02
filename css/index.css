@@ -73,7 +73,7 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #ececec;
 }
 
 .outline {
@@ -432,38 +432,209 @@ header .wrapper nav .navList .navList-item a {
 
 .sectionTwo {
   width: 100%;
-  height: 68.5rem;
+  height: 34rem;
   margin: auto;
+  background-color: #333333;
 }
 
 .sectionTwo .wrapper {
   max-width: 115rem;
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionTwo .wrapper .logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 16rem;
+}
+
+.sectionTwo .wrapper .logoContainer .sectionTwo-heading {
+  font-size: 3rem;
+}
+
+.sectionTwo .wrapper .svgContainer {
+  display: none;
 }
 
 .sectionThree {
   width: 100%;
   height: 68.5rem;
   margin: auto;
+  background: url(../../img/sectionThreeBgImgDesktop.jpg);
 }
 
 .sectionThree .wrapper {
   max-width: 115rem;
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #232323ef;
+  width: 54rem;
+  height: 37rem;
+  padding: 0 5rem;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_subHeading {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  line-height: 2.6rem;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_heading {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_paragraph {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_btn {
+  margin-top: 2rem;
+  width: 22.8rem;
+  height: 6.3rem;
+  border: none;
+  background-color: #5474FD;
+  font-size: 1.6rem;
+  letter-spacing: 0.16rem;
+}
+
+.sectionThree .wrapper .sectionThree-bookNow_article .bookNow-article_btn:hover {
+  background-color: #435ac4;
+  cursor: pointer;
 }
 
 .sectionFour {
   width: 100%;
   height: 68.5rem;
   margin: auto;
+  background: url(../../img/sectionFourBgImgDesktop.jpg);
 }
 
 .sectionFour .wrapper {
   max-width: 115rem;
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #232323e8;
+  width: 54rem;
+  height: 37rem;
+  padding: 0 5rem;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_subHeading {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  line-height: 2.6rem;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_heading {
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_paragraph {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_btn {
+  margin-top: 2rem;
+  width: 22.8rem;
+  height: 6.3rem;
+  border: none;
+  background-color: #5474FD;
+  font-size: 1.6rem;
+  letter-spacing: 0.16rem;
+}
+
+.sectionFour .wrapper .sectionFour-bookNow_article .bookNow-article_btn:hover {
+  background-color: #435ac4;
+  cursor: pointer;
 }
 
 .sectionFive {
