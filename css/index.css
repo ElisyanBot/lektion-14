@@ -148,7 +148,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../img/heroImgDesktop.jpg);
+  background-image: url(../img/heroImgDesktop.webp);
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
@@ -507,7 +507,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 68.5rem;
   margin: auto;
-  background: url(../img/sectionOneBgImgDesktop.jpg);
+  background: url(../img/sectionOneBgImgDesktop.webp);
 }
 
 .sectionOne .wrapper {
@@ -618,11 +618,17 @@ header .wrapper nav #MenyBtn {
 
 .sectionOne .wrapper .imgContainer .sectionOne-img_first {
   margin-bottom: 1rem;
+  width: 100%;
+  max-width: 35rem;
+  height: 100%;
 }
 
 .sectionOne .wrapper .imgContainer .sectionOne-img_second {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 100%;
+  max-width: 35rem;
+  height: 100%;
 }
 
 /*mobiles*/
@@ -834,7 +840,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 70rem;
   margin: auto;
-  background: url(../img/sectionThreeBgImgDesktop.jpg);
+  background: url(../img/sectionThreeBgImgDesktop.webp);
 }
 
 .sectionThree .wrapper {
@@ -984,7 +990,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 70rem;
   margin: auto;
-  background: url(../img/sectionFourBgImgDesktop.jpg);
+  background: url(../img/sectionFourBgImgDesktop.webp);
 }
 
 .sectionFour .wrapper {
@@ -1140,7 +1146,7 @@ header .wrapper nav #MenyBtn {
   width: 100%;
   height: 73.1rem;
   margin: auto;
-  background: url(../img/sectionFiveBgImgDesktop.jpg);
+  background: url(../img/sectionFiveBgImgDesktop.webp);
 }
 
 .sectionFive .wrapper {

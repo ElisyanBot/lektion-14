@@ -1,6 +1,6 @@
 .sectionOne{
     @include sectionSize(68.5rem);
-    background: url(../img/sectionOneBgImgDesktop.jpg);
+    background: url(../img/sectionOneBgImgDesktop.webp);
     .wrapper{
         @include wrapperSize(100%);
         @include flex(row, space-between, center);
@@ -68,10 +68,16 @@
 
             .sectionOne-img_first{
                 margin-bottom: 1rem;
+                width: 100%;
+                max-width: 35rem;
+                height: 100%;
 
             }
             .sectionOne-img_second{
                 align-self: flex-end;
+                width: 100%;
+                max-width: 35rem;
+                height: 100%;
             }
         }
     }

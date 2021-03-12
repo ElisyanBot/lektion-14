@@ -1,6 +1,6 @@
 .sectionFour{
     @include sectionSize(70rem);
-    background: url(../img/sectionFourBgImgDesktop.jpg);
+    background: url(../img/sectionFourBgImgDesktop.webp);
     .wrapper{
         @include wrapperSize(100%);
         @include flex(row, flex-end, center);

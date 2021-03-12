@@ -3,7 +3,7 @@
 .hero{
     @include sectionSize(74rem);
     @include flex(column, center, center);
-    background-image: url(../img/heroImgDesktop.jpg);
+    background-image: url(../img/heroImgDesktop.webp);
     object-fit: cover;
     background-repeat: no-repeat;
     /*article hero section*/

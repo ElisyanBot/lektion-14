@@ -1,6 +1,6 @@
 .sectionFive{
     @include sectionSize(73.1rem);
-    background: url(../img/sectionFiveBgImgDesktop.jpg);
+    background: url(../img/sectionFiveBgImgDesktop.webp);
 
     .wrapper{
         @include wrapperSize(100%);
@@ -85,10 +85,6 @@
                             max-width: 90%;
                             font-size: 1.2rem;
                             line-height: 1.6rem;
-    
-                            span{
-    
-                            }
                     }
                 }
             }

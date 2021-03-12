@@ -1,6 +1,6 @@
 .sectionThree{
     @include sectionSize(70rem);
-    background: url(../img/sectionThreeBgImgDesktop.jpg);
+    background: url(../img/sectionThreeBgImgDesktop.webp);
     .wrapper{
         @include wrapperSize(100%);
         @include flex(row, flex-start, center);
